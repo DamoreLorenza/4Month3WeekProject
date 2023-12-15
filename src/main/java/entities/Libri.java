@@ -29,10 +29,6 @@ public class Libri {
     public long getISBN() {
         return ISBN;
     }
-    public long setISBN(Long ISBN) {
-        this.ISBN = ISBN;
-    }
-
 
     public String getTitolo() {
         return titolo;
