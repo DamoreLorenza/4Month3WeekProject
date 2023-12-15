@@ -1,33 +1,34 @@
 package DAO;
 
 import entities.Libri;
+import entities.Riviste;
 
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
-public class LibriDAO {
+public class RivisteDAO {
     private final EntityManager em;
-    public LibriDAO (EntityManager em){this.em= em;};
-    public void save (Libri libri){
+    public RivisteDAO (EntityManager em){this.em= em;};
+    public void save (Riviste riviste){
         EntityTransaction transaction = em.getTransaction();
         transaction.begin();
-        em.persist(libri);
+        em.persist(riviste);
         transaction.commit();
-        System.out.println("libro aggiunto correttamente");
+        System.out.println("rivista aggiunta correttamente");
     }
-    public Libri findById(long ISBN){
-        return em.find(Libri.class, ISBN);
+    public Riviste findById(long ISBN){
+        return em.find(Riviste.class, ISBN);
     }
    /* public void findByIdAndDelete(long ISBN){
-        Libri found = this.findById(ISBN);
+        Riviste found = this.findById(ISBN);
         if (found != null){
             EntityTransaction transaction= em.getTransaction();
             transaction.begin();
             em.remove(found);
             transaction.commit();
-            System.out.println("trovato ed eliminato");
-        } else {System.out.println("dove seeeeii, non ti trovoo libroo!!");
+            System.out.println("trovata ed eliminato");
+        } else {System.out.println("dove seeeeii, non ti trovoo rivistaa!!");
     }
 
  }

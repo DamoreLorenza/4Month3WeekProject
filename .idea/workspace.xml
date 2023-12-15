@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d08bee-0e9e-4a4b-8254-b739d59f6ee4" name="Changes" comment="libro">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LibriDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Application.java" afterDir="false" />
+    <list default="true" id="a0d08bee-0e9e-4a4b-8254-b739d59f6ee4" name="Changes" comment="libro2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/RivisteDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/LibriDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/LibriDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Libri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Libri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Riviste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Riviste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +60,20 @@
       <option name="project" value="LOCAL" />
       <updated>1702635774951</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="libro2">
+      <option name="closed" value="true" />
+      <created>1702638511688</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702638511688</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="libro" />
-    <option name="LAST_COMMIT_MESSAGE" value="libro" />
+    <MESSAGE value="libro2" />
+    <option name="LAST_COMMIT_MESSAGE" value="libro2" />
   </component>
 </project>

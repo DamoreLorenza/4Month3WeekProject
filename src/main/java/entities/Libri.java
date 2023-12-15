@@ -8,10 +8,15 @@ public class Libri {
     @Id
     @GeneratedValue
     private long ISBN;
+    @Column (name ="titolo")
     private String titolo;
+    @Column (name ="anno_pubblicazione")
     protected int annoPubblicazione;
+    @Column (name ="numero_pagine")
     protected int numeroPagine;
+    @Column (name ="autore")
     private String autore;
+    @Column (name ="genere")
     private String genere;
 
     public Libri() {
