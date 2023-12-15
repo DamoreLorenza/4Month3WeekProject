@@ -6,10 +6,11 @@ import java.util.Date;
 import java.util.UUID;
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Table(name = "Prestito")
 public class Prestito {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
     @Column (name ="utente")
     private Utente utente;

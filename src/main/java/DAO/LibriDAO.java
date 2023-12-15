@@ -5,6 +5,8 @@ import entities.Libri;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 public class LibriDAO {
     private final EntityManager em;
@@ -32,4 +34,5 @@ public class LibriDAO {
 
  }
   */
+
 }

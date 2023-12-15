@@ -1,9 +1,6 @@
 package entities;
 
-import DAO.LibriDAO;
-import DAO.PrestitoDAO;
-import DAO.RivisteDAO;
-import DAO.UtenteDAO;
+import DAO.*;
 import entities.Libri;
 
 import javax.persistence.EntityManager;
@@ -20,6 +17,7 @@ private static final EntityManagerFactory emf = Persistence.createEntityManagerF
     public static void main(String[] args) {
         EntityManager em = emf.createEntityManager();
 
+        ArchivioDAO archivioDAO = new ArchivioDAO(em);
         PrestitoDAO prestitoDAO = new PrestitoDAO(em);
         UtenteDAO utenteDAO = new UtenteDAO(em);
         LibriDAO libriDAO = new LibriDAO(em);
@@ -40,6 +38,11 @@ private static final EntityManagerFactory emf = Persistence.createEntityManagerF
         else{System.out.println("cant find that aaarrrggg");};
 
         //libriDAO.findByIdAndDelete(numeroISBN)
+
+       // archivioDAO.AnnoPubblicazione(1999);
+       // archivioDAO.RicercaAutore("Pablo Escobar");
+       // archivioDAO.RicercaTitolo("Che confusione");
+
 
         em.close();
         emf.close();

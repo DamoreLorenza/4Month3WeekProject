@@ -6,6 +6,8 @@ import entities.Riviste;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 public class RivisteDAO {
     private final EntityManager em;
@@ -33,4 +35,5 @@ public class RivisteDAO {
 
  }
   */
+
 }

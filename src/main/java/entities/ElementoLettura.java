@@ -1,12 +1,15 @@
 package entities;
 
+import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+
 import javax.persistence.*;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "ElementoLettura")
 public class ElementoLettura {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long ISBN;
     @Column (name ="titolo")
     private String titolo;
