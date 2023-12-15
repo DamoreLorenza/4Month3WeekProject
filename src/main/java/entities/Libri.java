@@ -4,16 +4,10 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Libri")
-public class Libri {
+public class Libri extends ElementoLettura {
     @Id
     @GeneratedValue
     private long ISBN;
-    @Column (name ="titolo")
-    private String titolo;
-    @Column (name ="anno_pubblicazione")
-    protected int annoPubblicazione;
-    @Column (name ="numero_pagine")
-    protected int numeroPagine;
     @Column (name ="autore")
     private String autore;
     @Column (name ="genere")
@@ -23,48 +17,19 @@ public class Libri {
     }
 
     public Libri(String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {
-        this.titolo = titolo;
-        this.annoPubblicazione = annoPubblicazione;
-        this.numeroPagine = numeroPagine;
+        super( titolo, annoPubblicazione, numeroPagine);
         this.autore = autore;
         this.genere = genere;
     }
 
 
-    public long getISBN() {
-        return ISBN;
-    }
-
-    public String getTitolo() {
-        return titolo;
-    }
-
-    public void setTitolo(String titolo) {
-        this.titolo = titolo;
-    }
-
-    public int getAnnoPubblicazione() {
-        return annoPubblicazione;
-    }
-
-    public void setAnnoPubblicazione(int annoPubblicazione) {
-        this.annoPubblicazione = annoPubblicazione;
-    }
-
-    public int getNumeroPagine() {
-        return numeroPagine;
-    }
-
-    public void setNumeroPagine(int numeroPagine) {
-        this.numeroPagine = numeroPagine;
-    }
 
     public String getAutore() {
         return autore;
     }
 
     public void setAutore(String autore) {
-        this.titolo = titolo;
+        this.autore = autore;
     }
     public String getGenere() {
         return genere;
@@ -79,9 +44,9 @@ public class Libri {
     public String toString() {
         return "Libri{" +
                 "Codice ISBN=" + ISBN +
-                ", titolo='" + titolo + '\'' +
-                ", anno pubblicazione='" + annoPubblicazione + '\'' +
-                ", numero pagine='" + numeroPagine + '\'' +
+                ", titolo='" + getTitolo() + '\'' +
+                ", anno pubblicazione='" + getAnnoPubblicazione() + '\'' +
+                ", numero pagine='" + getNumeroPagine() + '\'' +
                 ", autore='" + autore + '\'' +
                 ", genere='" + genere + '\'' +
                 '}';

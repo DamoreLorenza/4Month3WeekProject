@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d08bee-0e9e-4a4b-8254-b739d59f6ee4" name="Changes" comment="riviste">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/UtenteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Prestito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Utente.java" afterDir="false" />
+    <list default="true" id="a0d08bee-0e9e-4a4b-8254-b739d59f6ee4" name="Changes" comment="utente">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/PrestitoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/ElementoLettura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Libri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Libri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Prestito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Prestito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Riviste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Riviste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +77,22 @@
       <option name="project" value="LOCAL" />
       <updated>1702639837206</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="utente">
+      <option name="closed" value="true" />
+      <created>1702641933820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702641933820</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="libro" />
     <MESSAGE value="libro2" />
     <MESSAGE value="riviste" />
-    <option name="LAST_COMMIT_MESSAGE" value="riviste" />
+    <MESSAGE value="utente" />
+    <option name="LAST_COMMIT_MESSAGE" value="utente" />
   </component>
 </project>
